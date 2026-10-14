@@ -6,20 +6,21 @@
     <meta name="theme-color" content="#f8f5ee" />
     <meta name="description" content="An offline-first research workspace for the question, sources, outline, and tasks behind your next paper." />
     <title>ThesisBoard — Give your ideas room to grow</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23bd5c3e'/%3E%3Cpath d='M16 19h32v5H36v24h-8V24H16z' fill='%23fff8ed'/%3E%3C/svg%3E" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="brand.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
     <div class="app-shell">
       <aside class="sidebar" aria-label="Workspace navigation">
-        <a class="brand" href="./"><span class="brand-icon">t<span>.</span></span><span><strong>thesisboard</strong><small>IDEAS INTO IMPACT</small></span></a>
+        <a class="brand" href="./"><img class="brand-symbol" src="brand.svg" width="38" height="38" alt="" /><span><strong>thesis<span>board.</span></strong><small>IDEAS INTO IMPACT</small></span></a>
         <div class="sidebar-group"><div class="sidebar-heading"><span>YOUR WORKSPACES</span><button id="sidebar-add" type="button" aria-label="Add project">+</button></div><div id="project-list" class="project-list"></div></div>
         <div class="sidebar-bottom"><div class="privacy-card"><span class="privacy-icon">✳</span><strong>Just you and your ideas.</strong><p>Your work is saved in this browser. Export a backup to keep it safe.</p></div><button id="backup-button" class="sidebar-link" type="button">↓ <span>Export all data</span></button><button id="restore-button" class="sidebar-link" type="button">↥ <span>Import backup</span></button><input id="restore-input" type="file" accept="application/json,.json" hidden /><a class="sidebar-link" href="#about">ⓘ <span>About ThesisBoard</span></a></div>
       </aside>
 
       <div class="main-wrap">
-        <header class="topbar"><button id="mobile-menu" class="mobile-menu" type="button" aria-label="Open workspace menu">☰</button><span class="breadcrumb">WORKSPACE <span>/</span> <strong id="breadcrumb-title">OVERVIEW</strong></span><div class="topbar-right"><span class="save-state"><span class="save-dot"></span> SAVED ON THIS DEVICE</span><button id="new-project-button" class="top-add" type="button">+ New project</button></div></header>
+        <header class="topbar"><button id="mobile-menu" class="mobile-menu" type="button" aria-label="Open workspace menu">☰</button><a class="mobile-brand" href="./" aria-label="ThesisBoard home"><img src="brand.svg" width="28" height="28" alt="" /><span>thesisboard.</span></a><span class="breadcrumb">WORKSPACE <span>/</span> <strong id="breadcrumb-title">OVERVIEW</strong></span><div class="topbar-right"><span class="save-state"><span class="save-dot"></span> SAVED ON THIS DEVICE</span><button id="new-project-button" class="top-add" type="button">+ New project</button></div></header>
         <main id="main-content">
           <section id="welcome-view" class="welcome-view" hidden><div class="welcome-illustration" aria-hidden="true"><div class="welcome-paper paper-back"></div><div class="welcome-paper paper-front"><span>THE BIG QUESTION</span><i></i><i></i><i></i><b>✳</b></div></div><span class="overline">THE START OF SOMETHING GOOD</span><h1>Every great paper starts<br />with a <em>good question.</em></h1><p>Create a workspace for your research question, source library, working outline, and next steps.</p><button id="welcome-create" class="primary-button" type="button">Start a project <span>↗</span></button></section>
 

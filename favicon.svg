@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">ThesisBoard</title>
+  <rect width="48" height="48" fill="#28352d"/>
+  <path d="M5 7h29v6H25v29h-7V13H5z" fill="#e7b98e"/>
+  <path d="M31 24h12v5H31zM31 37h12v5H31z" fill="#bc664b"/>
+</svg>
